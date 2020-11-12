@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: khaki;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.pic {
+  position: relative;
+
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+  /* opacity: 0.5; */
+  scroll-behavior: smooth;
+}
+
+/* Dont touch */
+.column {
+  height: 350px;
+  /* margin: 2rem; */
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: 3fr;
+  overflow: hidden;
+  background-color: gray;
+
+  overflow-y: scroll;
+  background-color: transparent;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+.column::-webkit-scrollbar {
+  display: none;
+}
+
+.row {
+  display: flex;
+  /* 
+  justify-content: space-evenly; */
+}
+
+
+
+
+h1 {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  color: white;
+  text-shadow: 4px 4px 4px #000000;
+  font-size: 60px;
+}
+
+
+.flex-box {
+  height: auto;
+  text-align: center;
+  background-color: white;
+  color: black;
+  box-shadow: 8px 10px 10px 1px black;
+  border-radius: 20px;
+  width: 350px;
+}
+
+/* 
+.flex-box2 {
+  background-color: white;
+  color: black;
+  padding-left: 25px;
+  padding-right: 15px;
+}
+
+.flex-box3 {
+  background-color: white;
+  color: black;
+
+  padding-left: 25px;
+  padding-right: 15px;
+} */
+
+
+
+/* IPAD PRO ONLY */
+@media screen and (max-width: 1025px) {}
+
+.row {
+  margin-right: 30px;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+.flex-box {
+  margin: 30px;
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* IPHONE X ETC  */
+@media screen and (max-width: 800px) {
+  .row {
+    display: grid;
+    grid-template-rows: 3fr;
+    margin-left: 20px;
+  }
+
+  .flex-box {
+    margin-top: 30px;
+  }
+
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
